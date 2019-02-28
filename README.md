@@ -1,5 +1,10 @@
 # 4-Points-Painter
 
+# Requirements
+- python 3.6
+- opencv
+- openpyxl
+
 # RUN
 
 ```
