@@ -12,7 +12,7 @@ python 4pPainter.py --xl [your excel file] -i [your input image path] -o [output
 ```
 
 
-you want to test this program using the examples in this repositry, you put the below command.
+If you want to **test** this program using the examples in this repositry, you put the below command.
 ```
 python 4pPainter.py --xl test.xlsx -i ./image -o output0
 ```
