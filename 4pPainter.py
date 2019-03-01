@@ -17,6 +17,8 @@ xl_a = xl.active
 
 if not(os.path.isdir(args.output_img_path)):
         os.makedirs(args.output_img_path)
+        
+color_table = [(255, 0, 0), (0, 255, 0), (0, 0, 255), (255, 0, 255)]
 
 for row in xl_a.rows:
 
@@ -33,7 +35,7 @@ for row in xl_a.rows:
         # get 4 points
         for i in range(0, 4):
             point = (row[i * 2 + 1].value, row[i * 2 + 2].value)
-            cv2.circle(img_draw, point, 5, (0,255,0), -1)
+            cv2.circle(img_draw, point, 5, color_table[i], -1)
 
         cv2.imshow("img", img)
         cv2.imshow("img_draw", img_draw)
